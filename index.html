@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Moayd Shahat — Software Engineering student at KFUPM. Portfolio, projects, and contact information." />
+    <title>Moayd Shahat | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true">◆</span>
+          <span class="brand__text">MoaydShahat</span>
+        </a>
+
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navList"
+        >
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="nav__toggle-bar" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#projects">Projects</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-pressed="false"
+          aria-label="Toggle dark mode"
+          title="Toggle theme"
+        >
+          <span id="themeIcon" aria-hidden="true">🌙</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      
+      <section class="hero">
+        <div class="container hero__inner">
+          <p class="hero__greeting" id="greeting" aria-live="polite"></p>
+          <h1 class="hero__title">
+            Hi, I'm <span class="accent">Moayd Shahat</span>.
+          </h1>
+          <p class="hero__tagline">
+            Software Engineering student at KFUPM • Full‑Stack Developer (Trainee) • Interested in data science & AI.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="hero__meta">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Responsive Design</span>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section" id="about" aria-labelledby="aboutTitle">
+        <div class="container section__grid">
+          <div>
+            <h2 class="section__title" id="aboutTitle">About Me</h2>
+            <p>
+              I’m <strong>Moayd Shahat</strong>, a Software Engineering student at King Fahd University of Petroleum &amp; Minerals (KFUPM) with a strong foundation in software requirements, systems design, data science, and AI.
+              I’m experienced in building and optimizing technical workflows, supporting large-scale events, and delivering reliable solutions.
+              Proven leader with hands-on experience managing projects, coordinating teams, and driving execution.
+            </p>
+            <p>
+              <strong>Tagline:</strong> KFUPM Software Engineering • Full‑stack developer trainee • Data science &amp; AI
+            </p>
+
+            <ul class="about__highlights">
+              <li>🎓 B.Sc. Software Engineering (2022–Expected 2027) — GPA: 3.5/4 • 4 consecutive honor semesters</li>
+              <li>💼 Full‑Stack Developer (Trainee) at Oreed (2025–Present) — modern web apps, databases, and scalable architecture</li>
+              <li>🤝 Venture Craft (Outreach Team Member) — built a website for stakeholder tracking &amp; communication workflows</li>
+              <li>📣 KFUPM Gaming+ (Strategic Marketing Leader) — led campaigns to boost community engagement &amp; event attendance</li>
+            </ul>
+
+            <div class="about__meta" aria-label="Skills snapshot">
+              <span class="pill">Python</span>
+              <span class="pill">Java</span>
+              <span class="pill">SQL</span>
+              <span class="pill">MongoDB</span>
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">React</span>
+              <span class="pill">Git/GitHub</span>
+            </div>
+          </div>
+
+          <figure class="profile">
+            <img
+              src="assets/images/personalpic.png"
+              width="480"
+              height="480"
+              alt="Profile illustration for Moayd Shahat"
+              loading="lazy"
+            />
+          </figure>
+        </div>
+      </section>
+
+     
+      <section class="section section--alt" id="projects" aria-labelledby="projectsTitle">
+        <div class="container">
+          <div class="section__header">
+            <h2 class="section__title" id="projectsTitle">Projects</h2>
+      
+          </div>
+
+          <div class="projects">
+        
+            <article class="card">
+              <img
+                class="card__img"
+                src="assets/images/venture.png"
+                width="800"
+                height="500"
+                alt="Project 1 placeholder screenshot"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Outreach Management System</h3>
+                <p class="card__text">
+                  A web system that tracks stakeholders and streamlines outreach communication workflows for a student organization.
+                </p>
+                <ul class="card__tags" aria-label="Technologies used">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="card__actions">
+                  <a class="btn btn--small" href="#" aria-label="Open Outreach Management System demo">Live Demo</a>
+                  <a class="btn btn--small btn--ghost" href="#" aria-label="Open Outreach Management System source code">Source</a>
+                </div>
+              </div>
+            </article>
+
+            
+            <article class="card">
+              <img
+                class="card__img"
+                src="assets/images/pr2.png"
+                width="800"
+                height="500"
+                alt="Project 2 placeholder screenshot"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Responsive Portfolio Website</h3>
+                <p class="card__text">
+                  A mobile‑first personal portfolio built with semantic HTML, modern CSS, and JavaScript (theme toggle, greeting, and form validation).
+                </p>
+                <ul class="card__tags" aria-label="Technologies used">
+                  <li class="tag">HTML</li>
+                  <li class="tag">CSS</li>
+                  <li class="tag">JavaScript</li>
+                </ul>
+                <div class="card__actions">
+                  <a class="btn btn--small" href="#" aria-label="Open Responsive Portfolio Website demo">Live Demo</a>
+                  <a class="btn btn--small btn--ghost" href="#" aria-label="Open Responsive Portfolio Website source code">Source</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact" aria-labelledby="contactTitle">
+        <div class="container section__grid section__grid--contact">
+          <div>
+            <h2 class="section__title" id="contactTitle">Contact</h2>
+            <p>
+              Want to collaborate or give feedback? Send a message below.
+              (This form has no backend — it will show a success message only.)
+            </p>
+
+            <div class="contact__cards">
+              <div class="mini-card">
+                <h3 class="mini-card__title">Email</h3>
+                <p class="mini-card__text">
+                  <a href="mailto:m.k.shahat@gmail.com">m.k.shahat@gmail.com</a>
+                </p>
+              </div>
+
+
+              <div class="mini-card">
+                <h3 class="mini-card__title">Phone</h3>
+                <p class="mini-card__text">
+                  <a href="tel:+966506498518">+966 50 649 8518</a>
+                </p>
+              </div>
+
+
+              <div class="mini-card">
+                <h3 class="mini-card__title">Social</h3>
+                <p class="mini-card__text">
+                  <a href="#" aria-label="Your GitHub profile">GitHub</a> ·
+                  <a href="https://www.linkedin.com/search/results/all/?keywords=Moayd%20Shahat" target="_blank" rel="noopener" aria-label="Moayd Shahat on LinkedIn">LinkedIn</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form class="form" id="contactForm" novalidate>
+            <div class="form__row">
+              <label class="form__label" for="name">Name</label>
+              <input class="form__input" id="name" name="name" type="text" autocomplete="name" required />
+              <p class="form__hint" id="nameHint">Please enter your name.</p>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="email">Email</label>
+              <input
+                class="form__input"
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required
+              />
+              <p class="form__hint" id="emailHint">Please enter a valid email address.</p>
+            </div>
+
+            <div class="form__row">
+              <label class="form__label" for="message">Message</label>
+              <textarea
+                class="form__input form__textarea"
+                id="message"
+                name="message"
+                rows="6"
+                required
+              ></textarea>
+              <p class="form__hint" id="messageHint">Your message should be at least 10 characters.</p>
+            </div>
+
+            <button class="btn" type="submit">Send Message</button>
+
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p>© <span id="year"></span> Moayd Shahat. Built with HTML, CSS, and JavaScript.</p>
+        <a class="footer__link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

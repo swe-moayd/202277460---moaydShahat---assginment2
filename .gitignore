@@ -1,0 +1,14 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+
+*.log
+
+
+node_modules/
+
+# Env
+.env
