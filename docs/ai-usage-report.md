@@ -1,44 +1,47 @@
-# AI Usage Report (Assignment 1)
+# AI Usage Report (Assignment 2)
 
+## Tools Used
 
-## Tools Used & Use Cases
-
-### ChatGPT
-- **Use case:** Suggested a responsive layout using Grid/Flexbox and accessible navigation patterns.
-- **Use case:** Helped implement JavaScript interactivity (theme toggle, greeting message, form validation).
+### ChatGPT / Codex
+- Helped plan Assignment 2 upgrades as an incremental step from the previous assignment.
+- Assisted with implementing interactive JavaScript features:
+  - Project filtering tabs
+  - Live search
+  - API fetch workflow with loading/error feedback
+  - Improved form feedback handling
+- Assisted in updating technical documentation and README content.
 
 ### (Optional) GitHub Copilot
-- **Use case:** Autocompleted repetitive HTML/CSS classes and small JavaScript functions.
-- **Use case:** Suggested syntax fixes and code snippets while coding.
+- Suggested small code completions for repetitive HTML/CSS/JavaScript patterns.
+- Helped with syntax cleanup while editing.
 
-## Benefits & Challenges
+## How AI Was Used Responsibly
 
-### Benefits
-- Faster starting point (boilerplate layout, file structure, and naming)
-- Helpful ideas for responsive breakpoints and component styling
-- Reduced time debugging common JavaScript DOM issues
+- I reviewed all AI-generated suggestions before applying them.
+- I edited and adjusted generated code to match assignment requirements.
+- I tested interactions manually (filtering, search, form validation, API states).
+- I kept only the parts I understood and removed unneeded code.
 
-### Challenges / Limitations
-- Some generated code needed edits to match assignment requirements
-- Accessibility and validation details needed manual review
-- Styling suggestions sometimes required simplification for readability
+## Benefits
+
+- Faster implementation of dynamic user interactions.
+- Better structure for handling UI states (loading/success/error/empty).
+- Improved clarity and consistency in project documentation.
+
+## Challenges
+
+- Some AI suggestions required adaptation to fit the existing codebase from the previous assignment.
+- Error handling and UX messaging needed manual refinement for clarity.
+- Accessibility attributes and status behaviors still required human review.
 
 ## Learning Outcomes
 
-- Improved understanding of semantic HTML structure for a multi-section page
-- Learned how to use CSS variables and a data-attribute theme switch
-- Practiced basic client-side form validation without a backend
-- Built confidence in organizing a project into clear folders/files
+- Better understanding of DOM state updates from user input.
+- Practical experience combining filtering/search logic with UI feedback.
+- Improved confidence handling API success/failure flows in frontend JavaScript.
+- Stronger documentation habits for AI-assisted development.
 
-## Responsible Use & Modifications
+## References
 
-- Reviewed all AI-generated code line-by-line before committing
-- Renamed classes/IDs and rewrote text content to keep the work original
-- Tested the website on multiple viewport sizes (mobile/tablet/desktop)
-- Removed unnecessary code and added comments for clarity
-- Verified the form behavior and theme toggle worked correctly
-
-## References (Optional)
-
-- MDN Web Docs (HTML/CSS/JS syntax and accessibility guidance)
-- Any inspiration sites you looked at (list them here)
+- MDN Web Docs (DOM, Fetch API, localStorage, form validation)
+- GitHub REST API documentation (`/zen` endpoint behavior)

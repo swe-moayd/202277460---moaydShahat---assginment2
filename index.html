@@ -51,7 +51,6 @@
     </header>
 
     <main id="main">
-      
       <section class="hero">
         <div class="container hero__inner">
           <p class="hero__greeting" id="greeting" aria-live="polite"></p>
@@ -76,7 +75,6 @@
         </div>
       </section>
 
-      
       <section class="section" id="about" aria-labelledby="aboutTitle">
         <div class="container section__grid">
           <div>
@@ -89,6 +87,13 @@
             <p>
               <strong>Tagline:</strong> KFUPM Software Engineering • Full‑stack developer trainee • Data science &amp; AI
             </p>
+
+            <div class="fact-widget" aria-labelledby="factTitle">
+              <h3 class="fact-widget__title" id="factTitle">Quick Daily Insight</h3>
+              <p class="fact-widget__text" id="factText">Press the button to load a fresh developer quote.</p>
+              <button class="btn btn--small" id="loadFactBtn" type="button">Get New Quote</button>
+              <p class="fact-widget__status" id="factStatus" role="status" aria-live="polite"></p>
+            </div>
 
             <ul class="about__highlights">
               <li>🎓 B.Sc. Software Engineering (2022–Expected 2027) — GPA: 3.5/4 • 4 consecutive honor semesters</li>
@@ -123,23 +128,42 @@
         </div>
       </section>
 
-     
       <section class="section section--alt" id="projects" aria-labelledby="projectsTitle">
         <div class="container">
           <div class="section__header">
             <h2 class="section__title" id="projectsTitle">Projects</h2>
-      
+            <p class="section__subtitle">Use the filters and search box to explore my work.</p>
           </div>
 
-          <div class="projects">
-        
-            <article class="card">
+          <div class="project-controls" aria-label="Project filters">
+            <div class="project-tabs" role="tablist" aria-label="Project category tabs">
+              <button class="tab-btn is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+              <button class="tab-btn" type="button" data-filter="web" role="tab" aria-selected="false">Web</button>
+              <button class="tab-btn" type="button" data-filter="data" role="tab" aria-selected="false">Data/AI</button>
+            </div>
+
+            <label class="search" for="projectSearch">
+              <span class="sr-only">Search projects</span>
+              <input
+                class="search__input"
+                id="projectSearch"
+                type="search"
+                placeholder="Search projects by name or tech"
+                autocomplete="off"
+              />
+            </label>
+          </div>
+
+          <p class="empty-state" id="projectsEmpty" hidden>No projects found. Try another filter or search term.</p>
+
+          <div class="projects" id="projectGrid">
+            <article class="card reveal" data-category="web" data-search="outreach management system stakeholder communication html css javascript">
               <img
                 class="card__img"
                 src="assets/images/venture.png"
                 width="800"
                 height="500"
-                alt="Project 1 placeholder screenshot"
+                alt="Outreach Management System project screenshot"
                 loading="lazy"
               />
               <div class="card__body">
@@ -159,14 +183,13 @@
               </div>
             </article>
 
-            
-            <article class="card">
+            <article class="card reveal" data-category="web" data-search="responsive portfolio website theme toggle validation html css javascript">
               <img
                 class="card__img"
                 src="assets/images/pr2.png"
                 width="800"
                 height="500"
-                alt="Project 2 placeholder screenshot"
+                alt="Responsive Portfolio Website project screenshot"
                 loading="lazy"
               />
               <div class="card__body">
@@ -185,11 +208,36 @@
                 </div>
               </div>
             </article>
+
+            <article class="card reveal" data-category="data" data-search="student analytics dashboard python pandas plotly ai insights">
+              <img
+                class="card__img"
+                src="assets/images/venture.png"
+                width="800"
+                height="500"
+                alt="Student Analytics Dashboard project screenshot"
+                loading="lazy"
+              />
+              <div class="card__body">
+                <h3 class="card__title">Student Analytics Dashboard</h3>
+                <p class="card__text">
+                  A dashboard prototype that summarizes attendance and performance trends using interactive charts and clean data summaries.
+                </p>
+                <ul class="card__tags" aria-label="Technologies used">
+                  <li class="tag">Python</li>
+                  <li class="tag">Pandas</li>
+                  <li class="tag">Plotly</li>
+                </ul>
+                <div class="card__actions">
+                  <a class="btn btn--small" href="#" aria-label="Open Student Analytics Dashboard demo">Live Demo</a>
+                  <a class="btn btn--small btn--ghost" href="#" aria-label="Open Student Analytics Dashboard source code">Source</a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- CONTACT -->
       <section class="section" id="contact" aria-labelledby="contactTitle">
         <div class="container section__grid section__grid--contact">
           <div>
@@ -207,14 +255,12 @@
                 </p>
               </div>
 
-
               <div class="mini-card">
                 <h3 class="mini-card__title">Phone</h3>
                 <p class="mini-card__text">
                   <a href="tel:+966506498518">+966 50 649 8518</a>
                 </p>
               </div>
-
 
               <div class="mini-card">
                 <h3 class="mini-card__title">Social</h3>

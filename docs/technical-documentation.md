@@ -1,74 +1,76 @@
-# Technical Documentation (Assignment 1)
+# Technical Documentation (Assignment 2)
 
 ## Overview
 
-This project is a static personal portfolio site built with:
-- **HTML** for structure and content
-- **CSS** for styling and responsive layout
-- **JavaScript** for interactivity (theme toggle, greeting, form validation)
+This portfolio is an incremental enhancement of the previous assignment, built with:
+- **HTML** for semantic page structure
+- **CSS** for layout, transitions, and responsive behavior
+- **JavaScript** for interactivity, dynamic content, data handling, and user feedback
 
-## File/Folder Responsibilities
+## File Responsibilities
 
 - `index.html`  
-  Main page containing navigation and 3 required sections:
-  - About Me
-  - Projects (2 cards)
-  - Contact (form)
+  Main structure with sections for About, Projects, and Contact.  
+  Includes dynamic UI controls:
+  - Project category tabs
+  - Live project search input
+  - API quote widget button and status output
 
 - `css/styles.css`  
-  Styles for layout, typography, components, and responsiveness.
-  Uses:
-  - CSS variables (`:root`) for theme colors
-  - `[data-theme="dark"]` for dark theme overrides
-  - Grid/Flexbox for responsive layout
+  Handles:
+  - Theme variables and dark mode overrides
+  - Responsive layout (`Grid` and `Flexbox`)
+  - Button/card hover transitions
+  - Reveal animation classes (`.reveal`, `.is-visible`)
+  - Status styles for loading/success/error feedback
 
 - `js/script.js`  
-  Adds interactivity:
-  - Theme toggle with `localStorage`
-  - Greeting message based on time of day
-  - Mobile menu toggle (hamburger) + close behavior (outside click, ESC)
-  - Contact form validation (no backend submission)
+  Handles:
+  - Theme persistence with `localStorage`
+  - Time-based greeting
+  - Mobile menu behavior
+  - Dynamic project filtering + live search
+  - Fetching a quote from GitHub Zen API with loading/error states
+  - Contact form validation and status feedback
+  - Scroll reveal animation using `IntersectionObserver`
 
-- `assets/images/`  
-  Placeholder SVG images for profile and projects. Replace with your own.
+## Assignment 2 Requirement Mapping
 
-- `docs/ai-usage-report.md`  
-  Documents how AI tools were used and how output was reviewed/modified.
+### 1) Dynamic Content
+- Implemented project filtering and live search.
+- Project cards update immediately based on user clicks and typing.
+- Empty state appears when no project matches.
 
-## Interactivity Details
+### 2) Data Handling
+- `localStorage` stores theme preference (`light` / `dark`).
+- Public API fetch (`https://api.github.com/zen`) loads dynamic quote text.
+- API errors are handled with friendly feedback.
 
-### 1) Dark/Light Theme Toggle
-- Button toggles `document.documentElement.dataset.theme`
-- Theme is stored in `localStorage` under key `theme`
-- If no saved theme exists, system preference is used (`prefers-color-scheme`)
+### 3) Animation and Transitions
+- Card and button hover transitions.
+- Fade/slide reveal effect for project cards when scrolling into view.
+- Animated status message entry (`status-pop`) for feedback text.
 
-### 2) Time-Based Greeting
-- On page load, the script checks the local hour:
-  - < 12 → “Good morning”
-  - < 18 → “Good afternoon”
-  - otherwise → “Good evening”
-- Updates the greeting text in the hero section.
+### 4) Error Handling and User Feedback
+- Contact form validation for name, email, and message length.
+- Clear error and success messages in contact form.
+- Loading message shown while fetching quote.
+- Friendly API failure message if request fails.
+- Empty state message shown when search/filter returns no results.
 
-### 3) Contact Form Validation (Demo)
-- Uses JavaScript to validate:
-  - Name: at least 2 characters
-  - Email: basic regex check
-  - Message: at least 10 characters
-- Prevents default form submission and shows a success message.
+## Responsiveness
 
-## Responsive Design Strategy
+- Breakpoint at `900px`: content grids collapse to one column.
+- Breakpoint at `720px`: mobile nav dropdown is enabled.
+- Project controls adapt to stacked layout on small screens.
 
-- Layout is built mobile-first and adapts using breakpoints:
-  - `900px`: switches 2-column grids to single column
-  - `720px`: enables mobile menu dropdown
+## Manual Test Checklist
 
-## Testing Checklist
-
-- Resize window / use DevTools device toolbar:
-  - [ ] Mobile (360px)
-  - [ ] Tablet (768px)
-  - [ ] Desktop (1024px+)
-- Confirm:
-  - [ ] Theme toggle works and persists after refresh
-  - [ ] Nav links smoothly scroll and mobile menu closes when clicked
-  - [ ] Form shows hints and success message
+- [ ] Theme toggle persists after reload
+- [ ] Mobile nav opens/closes and closes on outside click/ESC
+- [ ] Project tabs filter cards correctly
+- [ ] Search updates results while typing
+- [ ] Empty state appears when there are no matches
+- [ ] Quote widget shows loading, then success or error message
+- [ ] Form validation blocks invalid submit and shows hints
+- [ ] Form success message appears for valid input

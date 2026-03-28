@@ -1,21 +1,24 @@
-# Assignment 1 — Personal Portfolio Website
+# Assignment 2 - Interactive Personal Portfolio Website
 
-A simple, responsive personal portfolio website built with **HTML**, **CSS**, and **JavaScript**.  
-It includes an About section, Projects section, and a Contact form (no backend).
+This project is an incremental upgrade of the previous assignment.  
+The portfolio now includes stronger interactivity, dynamic content behavior, and clearer user feedback using JavaScript.
 
-## Features
+## Project Features
 
-- Responsive layout (mobile / tablet / desktop) using **CSS Grid** and **Flexbox**
-- Sticky navigation + mobile hamburger menu
-- Smooth scrolling between sections
-- **Dark / Light theme toggle** (saved in `localStorage`)
-- **Greeting message** based on time of day
-- Contact form validation + success message (demo only)
+- Responsive layout for mobile, tablet, and desktop
+- Sticky navigation and mobile hamburger menu
+- Dark/light theme toggle saved with `localStorage`
+- Time-based greeting in the hero section
+- Dynamic project filtering with tabs (`All`, `Web`, `Data/AI`)
+- Live project search while typing
+- API-powered quote widget with loading and error handling
+- Contact form validation with success/error feedback
+- Smooth reveal and hover animations for better UX
 
 ## Folder Structure
 
 ```text
-assignment-1/
+assignment-2/
 ├── README.md
 ├── index.html
 ├── css/
@@ -24,45 +27,30 @@ assignment-1/
 │   └── script.js
 ├── assets/
 │   └── images/
-│       ├── profile.svg
-│       ├── project-1.svg
-│       └── project-2.svg
 ├── docs/
 │   ├── ai-usage-report.md
 │   └── technical-documentation.md
 └── .gitignore
 ```
 
-## How to Run Locally
+## Setup Instructions
 
-No build tools needed.
+No build tools are required.
 
-1. Download/clone this repository
-2. Open `index.html` in your browser  
-   - Option A: Double click `index.html`  
-   - Option B (recommended): Use VS Code **Live Server**
+1. Clone/download the repository
+2. Open `index.html` in your browser
+3. Optional: run with VS Code Live Server for easier testing
 
-## AI Use (Summary)
+## AI Use Summary
 
-I used AI-assisted tools to help generate an initial layout, improve responsive CSS, and add JavaScript interactivity.
-See the full report in: `docs/ai-usage-report.md`.
+AI tools were used for feature planning, JavaScript logic refinement, and documentation updates.  
+Detailed usage is documented in `docs/ai-usage-report.md`.
 
-## Deployment (Optional)
+## Repository Naming Requirement
 
-You can deploy with **GitHub Pages**:
+Create a public repository named: `id-name-assignment2`  
+Replace `id` with your student ID and `name` with your first and last name (no spaces).
 
-1. Push your code to GitHub
-2. Go to **Settings → Pages**
-3. Choose your branch (e.g., `main`) and folder (`/root`)
-4. Save — GitHub will provide a live link
+## Optional Deployment
 
-## Customization Checklist
-
-- [ ] Update **Moayd Shahat** and the tagline in `index.html`
-- [ ] Replace placeholder images in `assets/images/`
-- [ ] Update Project links (Live Demo / Source)
-- [ ] Update contact email/social links
-
----
-
-> Repository naming requirement: create a public repo named `id-name-assignment1` (replace `id` and `name` with your own).
+Deploy using GitHub Pages, Netlify, or Vercel and include the live link here.
